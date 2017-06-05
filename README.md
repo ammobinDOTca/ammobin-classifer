@@ -1,4 +1,5 @@
-# Ammobin Classifier
+# Ammobin Classifier [![Build Status](https://travis-ci.org/ammobinDOTca/ammobin-classifer.svg?branch=master)](https://travis-ci.org/ammobinDOTca/ammobin-classifer)
+
 calibre + brand classier for [ammobin.ca](https://ammobin.ca)
 
 ## getting started
