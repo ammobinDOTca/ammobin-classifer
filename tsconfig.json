@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "compilerOptions": {
+    "noEmitOnError": true,
+    "target": "es2016",
+    "module": "commonjs",
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "noLib": false,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": false,
+    "sourceMap": true,
+    "listFiles": false,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "outDir": "build",
+    "lib": [
+      "es6"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
+  "include": [
+    "./src/**/*.ts"
+  ]
+}

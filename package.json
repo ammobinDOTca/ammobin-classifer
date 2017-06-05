@@ -1,0 +1,21 @@
+{
+  "name": "ammobin-classifier",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "tslint --type-check --project ./tsconfig.json './src/**/*.ts' ",
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "author": "nexus-uw",
+  "license": "MIT",
+  "dependencies": {
+    "natural": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/natural": "^0.2.32",
+    "tslint": "^5.4.2",
+    "typescript": "^2.3.4"
+  }
+}
