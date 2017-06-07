@@ -3,6 +3,9 @@ import { shotgunGauges } from './shotgun-gauges';
 import { rimfireCalibres } from './rimfire-calibres';
 import { centerFireCalibres } from './centerfire-calibres';
 import { brands } from './brands';
+
+export { getItemCount } from './get-counts';
+
 // reg ex to find commas so that we can later replace them with spaces to help with classification
 const reg = new RegExp(',', 'g');
 

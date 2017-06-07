@@ -16,7 +16,8 @@ exports.centerFireCalibres = [
         '223 Remington',
         '5.56x45',
         '5.56x45mm',
-        '.223'
+        '.223',
+        '223rem'
     ],
     [
         '7.62 x 25 Tokarev',
@@ -31,6 +32,7 @@ exports.centerFireCalibres = [
         '.308 Win/7.62 Nato',
         '.308 Win',
         '.308',
+        '308win',
         '7.62 × 51mm',
         '7.62×51mm',
         '7.62 × 51 mm',
@@ -76,7 +78,8 @@ exports.centerFireCalibres = [
     [
         '7.62 × 54mmR',
         '7.62x54r',
-        '7.62x54'
+        '7.62x54',
+        '7.62x54R'
     ],
     [
         '7.62 x 39mm',
@@ -115,7 +118,8 @@ exports.centerFireCalibres = [
         ' .25-06 Remington'
     ],
     [
-        '.30-06 Springfield'
+        '.30-06 Springfield',
+        '30-06 Sprg'
     ],
     [
         '.30-30 Winchester',

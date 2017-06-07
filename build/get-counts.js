@@ -1,0 +1,52 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const natural_1 = require("natural");
+/**
+ * parse a store listing to determine the item quantity
+ * @param {string} str
+ * @returns {number} determined quantity, returns 0 if not found
+ */
+function getItemCount(str) {
+    const result = natural_1.NGrams.ngrams(str.replace('rd', ' rd').toLowerCase(), 3, '', '')
+        .map(words => {
+        let count = null;
+        const numberScore = words.reduce((score, word) => {
+            const parsed = parseInt(word, 10);
+            if (!isNaN(parsed) && parsed.toString() === word) {
+                if (score === 0) {
+                    count = parsed;
+                    score = 1;
+                }
+                else {
+                    // if multiple numbers, probably not a good match
+                    score = 0.25;
+                }
+            }
+            return score;
+        }, 0);
+        // give another point for each
+        // give 0.5 points for 'of'
+        const keyScore = words.reduce((score, word, index) => {
+            const keywords = ['box', 'case', 'rounds', 'rds', 'crate', 'count', 'jar'];
+            if (keywords.indexOf(word) >= 0) {
+                score++;
+            }
+            else if (word === 'of' &&
+                index === 1 &&
+                keywords.indexOf(words[index - 1]) >= 0) {
+                // only give points if "<noun> of "
+                score += 0.5;
+            }
+            return score;
+        }, 0);
+        let score = numberScore + keyScore;
+        if (score <= 1) {
+            return { score, words, count: null };
+        }
+        // combine points and return score and count
+        return { score, words, count };
+    }).sort((a, b) => b.score - a.score)[0];
+    return result.count;
+}
+exports.getItemCount = getItemCount;
+//# sourceMappingURL=get-counts.js.map
