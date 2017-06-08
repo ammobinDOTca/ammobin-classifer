@@ -1,3 +1,4 @@
+export { getItemCount } from './get-counts';
 /**
  * pull out a standard rimfire calibre
  * @param {string} str string containing a rimfire calibre

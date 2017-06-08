@@ -5,6 +5,8 @@ const shotgun_gauges_1 = require("./shotgun-gauges");
 const rimfire_calibres_1 = require("./rimfire-calibres");
 const centerfire_calibres_1 = require("./centerfire-calibres");
 const brands_1 = require("./brands");
+var get_counts_1 = require("./get-counts");
+exports.getItemCount = get_counts_1.getItemCount;
 // reg ex to find commas so that we can later replace them with spaces to help with classification
 const reg = new RegExp(',', 'g');
 const rimfireClassifier = new natural.LogisticRegressionClassifier();

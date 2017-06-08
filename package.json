@@ -5,7 +5,9 @@
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "scripts": {
-    "test": "tslint --type-check --project ./tsconfig.json './src/**/*.ts' ",
+    "test:lint": "tslint --type-check --project ./tsconfig.json './src/**/*.ts' ",
+    "test:unit": "jest",
+    "test": "npm run test:lint && npm run test:unit",
     "build": "tsc",
     "prepublish": "npm run build"
   },
@@ -15,8 +17,23 @@
     "natural": "^0.5.1"
   },
   "devDependencies": {
+    "@types/jest": "^19.2.4",
     "@types/natural": "^0.2.32",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.5",
     "tslint": "^5.4.2",
     "typescript": "^2.3.4"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/?(*.)(spec|test).ts?(x)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
   }
 }
