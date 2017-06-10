@@ -4,24 +4,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * know rimfire calibres
  */
 exports.rimfireCalibres = [
-    [
-        '.22LR',
-        '.22 LR',
-        '22 Long Rifle'
-    ],
-    [
-        '.22WMR',
-        '.22 WMR',
-        '.22 Winchester Magnum',
-        '22 Magnum'
-    ],
-    [
-        '.17HMR',
-        '.17 HMR'
-    ],
-    [
-        '.17 WSM',
-        '17 WSM'
-    ]
+    ['.22 lr', '22lr', '22longrifle', 'longrifle', '22'],
+    ['.22 wmr', '22wmr', '22winchestermagnum', '22magnum', '22winmag', '22mag'],
+    ['.17 hmr', '17hmr', '17hornadymagnumrimfire'],
+    ['.17 wsm', '17wsm']
 ];
 //# sourceMappingURL=rimfire-calibres.js.map

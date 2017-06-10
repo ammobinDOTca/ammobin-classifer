@@ -3,108 +3,117 @@
  */
 export const brands = [
   [
-    'Hornady'
+    'hornady'
   ],
   [
-    'Remington'
+    'remington'
   ],
   [
-    'Winchester'
+    'winchester'
   ],
   [
-    'Aguila'
+    'aguila'
   ],
   [
-    'CHALLENGER'
+    'challenger'
   ],
   [
-    'Rio'
+    'rio'
   ],
   [
-    'Sellier & Bellot'
+    'sellier & bellot',
+    'sellier&bellot'
   ],
   [
-    'Clever Mirage',
-    'Clever '
+    'clever mirage',
+    'clever '
   ],
   [
-    'KENT '
+    'kent '
   ],
   [
-    'Rottweil'
+    'rottweil'
   ],
   [
-    'Federal',
-    'Estate'
+    'federal',
+    'estate'
   ],
   [
-    'CCI'
+    'cci'
+  ],
+
+  [
+    'aguila'
   ],
   [
-    'Aguila'
+    'surplus',
+    'mil-surp'
   ],
   [
-    'Surplus',
-    'Sellier & Bellot Surplus',
-    'Mil-Surp'
+    'barnaul',
+    'barnaul/mfs',
+    'mfs/barnaul',
+    'mfs'
   ],
   [
-    'Barnaul',
-    'Barnaul/MFS',
-    'MFS/Barnaul',
-    'MFS'
+    'ppu',
+    'prvipartizan',
+    'prvi'
   ],
   [
-    'PPU',
-    'Prvi Partizan',
-    'Priv Partizan'
+    'pmc'
   ],
   [
-    'PMC'
+    'american eagle',
+    'americaneagle'
   ],
   [
-    'American Eagle'
+    'maxxtech',
   ],
   [
-    'MAXXTech',
-    'MAXX Tech'
+    'geco'
   ],
   [
-    'Geco'
+    'browning'
   ],
   [
-    'Browning'
+    'centaure',
+    'centaurereloads'
   ],
   [
-    'Centaure',
-    'Centaure Reloads'
+    'wolf'
   ],
   [
-    'Wolf'
+    'norinco'
   ],
   [
-    'Norinco'
+    'independence'
   ],
   [
-    'Independence'
+    'black hills',
+    'blackhills'
   ],
   [
-    'Black Hills'
+    'weatherby'
   ],
   [
-    'Weatherby'
+    'wartak'
   ],
   [
-    'Wartak'
+    'foc',
+    'firearmsoutletcanada'
   ],
   [
-    'FOC',
-    'firearms outlet canada'
+    'barnes'
   ],
   [
-    'Barnes'
+    'sako'
   ],
   [
-    'SAKO'
-  ]
+    'eley'
+  ],
+  ['norma'],
+  ['powershok'],
+  ['hirtenberger'],
+  ['fiocchi']
 ];
