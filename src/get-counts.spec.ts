@@ -29,4 +29,17 @@ describe('get-count', () => {
   test('handle no count ("Winchester Super-X .22 Win Mag 40-Grain Full Metal Jacket Rifle Ammunition"', () => {
     expect(getItemCount('Winchester Super-X .22 Win Mag 40-Grain Full Metal Jacket Rifle Ammunition')).toEqual(null);
   });
+
+  test('handle brick', () => {
+    expect(getItemCount(' Aguila - .22LR, 40gr, SV, LRN, Brick of 500 ')).toEqual(500);
+  });
+
+  test('handle comma', () => {
+    expect(getItemCount('Chinese Surplus - 7.62x39, 123gr, FMJ, Crate of 1,500')).toEqual(1500);
+  });
+
+  // dont have way to deal with this
+  test.skip('handle CCI Blazer Handgun Brass Pistol Ammunition 9mm 115 Gr 50 Rounds FMJ #5200 ', () => {
+    expect(getItemCount('CCI Blazer Handgun Brass Pistol Ammunition 9mm 115 Gr 50 Rounds FMJ #5200 ')).toEqual(50);
+  });
 });
