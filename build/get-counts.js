@@ -7,7 +7,8 @@ const natural_1 = require("natural");
  * @returns {number} determined quantity, returns 0 if not found
  */
 function getItemCount(str) {
-    const result = natural_1.NGrams.ngrams(str.replace('rd', ' rd').toLowerCase(), 3, '', '')
+    const reg = new RegExp(',', 'g');
+    const result = natural_1.NGrams.ngrams(str.replace(reg, '').replace('rd', ' rd').toLowerCase(), 3, '', '')
         .map(words => {
         let count = null;
         const numberScore = words.reduce((score, word) => {
@@ -27,7 +28,7 @@ function getItemCount(str) {
         // give another point for each
         // give 0.5 points for 'of'
         const keyScore = words.reduce((score, word, index) => {
-            const keywords = ['box', 'case', 'rounds', 'rds', 'crate', 'count', 'jar'];
+            const keywords = ['box', 'case', 'rounds', 'rds', 'crate', 'count', 'jar', 'brick', 'can'];
             if (keywords.indexOf(word) >= 0) {
                 score++;
             }

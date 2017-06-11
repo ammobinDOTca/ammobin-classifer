@@ -73,7 +73,8 @@ exports.centerFireCalibres = [
         '9 × 19mm Parabellum',
         '9mm Luger',
         '9×19',
-        '9 MM LUGER'
+        '9 MM LUGER',
+        '9 mm'
     ],
     [
         '7.62 × 54mmR',
@@ -231,6 +232,11 @@ exports.centerFireCalibres = [
     [
         '.32 Winchester Special',
         ' .32 WS'
+    ],
+    [
+        '.222 Remington',
+        '222 REMINGTON',
+        '222 REM'
     ]
 ];
 //# sourceMappingURL=centerfire-calibres.js.map
