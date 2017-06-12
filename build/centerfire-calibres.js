@@ -84,6 +84,7 @@ exports.centerFireCalibres = [
     ['.32 winchester special', '32ws', '32winchesterspecial'],
     ['.45-70', '45-70'],
     ['.50 AE', '50ae', '50action'],
-    ['.222 remington', '222']
+    ['.222 remington', '222'],
+    ['.375 Ruger', '375ruger']
 ];
 //# sourceMappingURL=centerfire-calibres.js.map

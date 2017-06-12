@@ -115,6 +115,7 @@ exports.brands = [
     ],
     ['norma'],
     ['powershok'],
-    ['hirtenberger']
+    ['hirtenberger'],
+    ['fiocchi']
 ];
 //# sourceMappingURL=brands.js.map
