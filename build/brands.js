@@ -5,109 +5,116 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 exports.brands = [
     [
-        'Hornady'
+        'hornady'
     ],
     [
-        'Remington'
+        'remington'
     ],
     [
-        'Winchester'
+        'winchester'
     ],
     [
-        'Aguila'
+        'aguila'
     ],
     [
-        'CHALLENGER'
+        'challenger'
     ],
     [
-        'Rio'
+        'rio'
     ],
     [
-        'Sellier & Bellot'
+        'sellier & bellot',
+        'sellier&bellot'
     ],
     [
-        'Clever Mirage',
-        'Clever '
+        'clever mirage',
+        'clever '
     ],
     [
-        'KENT '
+        'kent '
     ],
     [
-        'Rottweil'
+        'rottweil'
     ],
     [
-        'Federal',
-        'Estate'
+        'federal',
+        'estate'
     ],
     [
-        'CCI'
+        'cci'
     ],
     [
-        'Aguila'
+        'aguila'
     ],
     [
-        'Surplus',
-        'Sellier & Bellot Surplus',
-        'Mil-Surp'
+        'surplus',
+        'mil-surp'
     ],
     [
-        'Barnaul',
-        'Barnaul/MFS',
-        'MFS/Barnaul',
-        'MFS'
+        'barnaul',
+        'barnaul/mfs',
+        'mfs/barnaul',
+        'mfs'
     ],
     [
-        'PPU',
-        'Prvi Partizan',
-        'Priv Partizan'
+        'ppu',
+        'prvipartizan',
+        'prvi'
     ],
     [
-        'PMC'
+        'pmc'
     ],
     [
-        'American Eagle'
+        'american eagle',
+        'americaneagle'
     ],
     [
-        'MAXXTech',
-        'MAXX Tech'
+        'maxxtech',
     ],
     [
-        'Geco'
+        'geco'
     ],
     [
-        'Browning'
+        'browning'
     ],
     [
-        'Centaure',
-        'Centaure Reloads'
+        'centaure',
+        'centaurereloads'
     ],
     [
-        'Wolf'
+        'wolf'
     ],
     [
-        'Norinco'
+        'norinco'
     ],
     [
-        'Independence'
+        'independence'
     ],
     [
-        'Black Hills'
+        'black hills',
+        'blackhills'
     ],
     [
-        'Weatherby'
+        'weatherby'
     ],
     [
-        'Wartak'
+        'wartak'
     ],
     [
-        'FOC',
-        'firearms outlet canada'
+        'foc',
+        'firearmsoutletcanada'
     ],
     [
-        'Barnes'
+        'barnes'
     ],
     [
-        'SAKO'
-    ]
+        'sako'
+    ],
+    [
+        'eley'
+    ],
+    ['norma'],
+    ['powershok'],
+    ['hirtenberger']
 ];
 //# sourceMappingURL=brands.js.map
