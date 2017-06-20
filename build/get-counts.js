@@ -11,12 +11,15 @@ function getItemCount(str) {
     const result = natural_1.NGrams.ngrams(str.replace(reg, '').replace('rd', ' rd').toLowerCase(), 3, '', '')
         .map(words => {
         let count = null;
-        const numberScore = words.reduce((score, word) => {
+        const numberScore = words.reduce((score, word, index) => {
             const parsed = parseInt(word, 10);
             if (!isNaN(parsed) && parsed.toString() === word) {
                 if (score === 0) {
                     count = parsed;
                     score = 1;
+                    if (index < 2 && words[index + 1] === 'rds') {
+                        score += 0.5;
+                    }
                 }
                 else {
                     // if multiple numbers, probably not a good match
