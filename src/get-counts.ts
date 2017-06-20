@@ -30,7 +30,7 @@ export function getItemCount(str: string): number {
       // give another point for each
       // give 0.5 points for 'of'
       const keyScore = words.reduce((score, word, index) => {
-        const keywords = ['box', 'case', 'rounds', 'rds', 'crate', 'count', 'jar', 'brick', 'can'];
+        const keywords = ['box', 'case', 'rounds', 'rds', 'crate', 'count', 'jar', 'brick', 'can', 'rnds'];
         if (keywords.indexOf(word) >= 0) {
           score++;
         } else if (word === 'of' &&
