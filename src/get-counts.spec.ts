@@ -38,6 +38,10 @@ describe('get-count', () => {
     expect(getItemCount('Chinese Surplus - 7.62x39, 123gr, FMJ, Crate of 1,500')).toEqual(1500);
   });
 
+  test('"Challenger Target Loads Shotgun Ammo - Target, 20Ga, 2-3/4", 7/8oz, #7-1/2, 25rds Box, 120..." = 25', () => {
+    expect(getItemCount('Challenger Target Loads Shotgun Ammo - Target, 20Ga, 2-3/4", 7/8oz, #7-1/2, 25rds Box, 120...')).toEqual(25);
+  });
+
   // dont have way to deal with this
   test.skip('handle CCI Blazer Handgun Brass Pistol Ammunition 9mm 115 Gr 50 Rounds FMJ #5200 ', () => {
     expect(getItemCount('CCI Blazer Handgun Brass Pistol Ammunition 9mm 115 Gr 50 Rounds FMJ #5200 ')).toEqual(50);
