@@ -22,7 +22,8 @@ export const brands = [
   ],
   [
     'sellier & bellot',
-    'sellier&bellot'
+    'sellier&bellot',
+    'sellierandbellot'
   ],
   [
     'clever mirage',
