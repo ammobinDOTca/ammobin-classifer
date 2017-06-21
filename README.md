@@ -11,5 +11,4 @@ calibre + brand classier for [ammobin.ca](https://ammobin.ca)
 
 
 ## todo
-- reduce boot up time (currently adds 3s to boot time)
-- need to account for how accurate the calibre match is (should have a threshold to return unknown instead)
+- give a best guess for quantity (ie: if price is similar to others, assume that has same count; make sure that doesnt apply to high quantity count)
