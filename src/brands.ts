@@ -40,7 +40,8 @@ export const brands = [
     'estate'
   ],
   [
-    'cci'
+    'cci',
+    'blazer'
   ],
 
   [
@@ -48,7 +49,8 @@ export const brands = [
   ],
   [
     'surplus',
-    'mil-surp'
+    'mil-surp',
+    'chinese'
   ],
   [
     'barnaul',
@@ -116,5 +118,21 @@ export const brands = [
   ['norma'],
   ['powershok'],
   ['hirtenberger'],
-  ['fiocchi']
+  ['fiocchi'],
+  ['imi'],
+  ['xmetal', 'x-metal'],
+  ['canadaammo'],
+  ['rws'],
+  ['hsm'],
+  ['nosler'],
+  ['clever mirage', 'clever'],
+  ['black goose', 'blackgoose'],
+  ['kent fasteel', 'kent'],
+  ['dominion arms', 'dominion'],
+  ['hevi-shot', 'hevi'],
+  ['prairie shot', 'prairie'],
+  ['score'],
+  ['imperial'],
+  ['black cloud', 'blackcloud'],
+  ['lightfield']
 ];
