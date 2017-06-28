@@ -42,14 +42,16 @@ exports.brands = [
         'estate'
     ],
     [
-        'cci'
+        'cci',
+        'blazer'
     ],
     [
         'aguila'
     ],
     [
         'surplus',
-        'mil-surp'
+        'mil-surp',
+        'chinese'
     ],
     [
         'barnaul',
@@ -117,6 +119,22 @@ exports.brands = [
     ['norma'],
     ['powershok'],
     ['hirtenberger'],
-    ['fiocchi']
+    ['fiocchi'],
+    ['imi'],
+    ['xmetal', 'x-metal'],
+    ['canadaammo'],
+    ['rws'],
+    ['hsm'],
+    ['nosler'],
+    ['clever mirage', 'clever'],
+    ['black goose', 'blackgoose'],
+    ['kent fasteel', 'kent'],
+    ['dominion arms', 'dominion'],
+    ['hevi-shot', 'hevi'],
+    ['prairie shot', 'prairie'],
+    ['score'],
+    ['imperial'],
+    ['black cloud', 'blackcloud'],
+    ['lightfield']
 ];
 //# sourceMappingURL=brands.js.map
