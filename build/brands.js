@@ -135,6 +135,10 @@ exports.brands = [
     ['score'],
     ['imperial'],
     ['black cloud', 'blackcloud'],
-    ['lightfield']
+    ['lightfield'],
+    ['atlanta arms', 'atlantaarms'],
+    ['kent'],
+    ['gamebore'],
+    ['bismuth'],
 ];
 //# sourceMappingURL=brands.js.map
