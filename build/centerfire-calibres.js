@@ -5,18 +5,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 exports.centerFireCalibres = [
     ['.357 mag', '357mag'],
-    ['5.56 nato',
+    ['.223 / 5.56 nato',
         '5.56',
         '5.56x45',
+        '.223 remington',
+        '223'
     ],
-    ['.223 remington', '223'],
     ['7.62 x 25 tokarev', '7.62x25'],
     ['.38 special', '38spl', '38special'],
     [
-        '7.62 nato',
-        '7.62x51'
-    ],
-    [
+        '.308 / 7.62 nato',
+        '7.62x51',
         '.308 winchester',
         '308win',
         '.308',
