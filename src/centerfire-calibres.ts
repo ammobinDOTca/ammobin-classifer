@@ -82,5 +82,6 @@ export const centerFireCalibres = [
   ['.45-70', '45-70'],
   ['.50 AE', '50ae', '50action'],
   ['.222 remington', '222'],
-  ['.375 Ruger', '375ruger']
+  ['.375 ruger', '375ruger'],
+  ['.270 winchester short magnum', '270winchestershortmagnum', '270wsm']
 ];
