@@ -62,7 +62,8 @@ exports.brands = [
     [
         'ppu',
         'prvipartizan',
-        'prvi'
+        'prvi',
+        'privpartisan'
     ],
     [
         'pmc'
@@ -140,5 +141,10 @@ exports.brands = [
     ['kent'],
     ['gamebore'],
     ['bismuth'],
+    ['sk'],
+    ['lapua'],
+    ['sig sauer', 'sigsauer'],
+    ['umc'],
+    ['magnum research', 'magnumresearch']
 ];
 //# sourceMappingURL=brands.js.map

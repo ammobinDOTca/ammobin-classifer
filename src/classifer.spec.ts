@@ -17,7 +17,9 @@ describe('classifer()', () => {
       [' FEDERAL 300WIN 180GR SPEER HOT CORE SP POWERSHOK ', '.300 winchester short magnum'],
       [' CCI 9mm Luger, 115 Grain FMJ , box of 50 ', '9mm'],
       [' BROWNING BPT 9mm Luger, 115 Grain FMJ , box of 50 ', '9mm'],
-      ['Hirtenberger 7.62x51 Nato Boxer, Primed', '.308 / 7.62 nato']
+      ['Hirtenberger 7.62x51 Nato Boxer, Primed', '.308 / 7.62 nato'],
+      ['Prvi Partizan Ammunition 6.5x52mm Mannlicher-Carcano 123 Grain Soft Point', '6.5x52mm carcano'],
+      ['PRVI Ammunition 6.5x52 Carcano 139gr FMJ-BT - Box of 20 ', '6.5x52mm carcano'],
     ].forEach(t => it(`"${t[0]} => ${t[1]}`, () =>
       expect(classify(centerFireCalibres, t[0]))
         .toEqual(t[1])));
@@ -27,7 +29,10 @@ describe('classifer()', () => {
     [
       [' Glock G22 Gen4 + 500 Round of PMC 40 S&W 180gr COMBO ', 'pmc'],
       ['IMI 5.56x45 NATO 62gr M855 Green Tip FMJ- Box of 30', 'imi'],
-      [' Schmidt-Rubin Surplus, 7.5x55 Swiss, 480 Round ', 'surplus']
+      [' Schmidt-Rubin Surplus, 7.5x55 Swiss, 480 Round ', 'surplus'],
+      ['Bulgarian Surplus, 7.62x39, 1320 Round Crate', 'surplus'],
+      [' Priv Partisan - 7.62x39, 123gr, SP, Box of 20 ', 'ppu'],
+      ['Schmidt-Rubin Surplus, 7.5x55 Swiss, 480 Round ', 'surplus'],
 
     ].forEach(t => it(`"${t[0]} => ${t[1]}`, () =>
       expect(classify(brands, t[0]))
