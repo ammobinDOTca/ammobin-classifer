@@ -61,7 +61,8 @@ export const brands = [
   [
     'ppu',
     'prvipartizan',
-    'prvi'
+    'prvi',
+    'privpartisan'
   ],
   [
     'pmc'
@@ -139,4 +140,9 @@ export const brands = [
   ['kent'],
   ['gamebore'],
   ['bismuth'],
+  ['sk'],
+  ['lapua'],
+  ['sig sauer', 'sigsauer'],
+  ['umc'],
+  ['magnum research', 'magnumresearch']
 ];
