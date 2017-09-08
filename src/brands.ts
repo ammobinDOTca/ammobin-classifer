@@ -6,12 +6,6 @@ export const brands = [
     'hornady'
   ],
   [
-    'remington'
-  ],
-  [
-    'winchester'
-  ],
-  [
     'aguila'
   ],
   [
@@ -144,5 +138,11 @@ export const brands = [
   ['lapua'],
   ['sig sauer', 'sigsauer'],
   ['umc'],
-  ['magnum research', 'magnumresearch']
+  ['magnum research', 'magnumresearch'],
+  [
+    'remington'
+  ],
+  [
+    'winchester'
+  ],
 ];

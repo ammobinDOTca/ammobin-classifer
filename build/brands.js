@@ -8,12 +8,6 @@ exports.brands = [
         'hornady'
     ],
     [
-        'remington'
-    ],
-    [
-        'winchester'
-    ],
-    [
         'aguila'
     ],
     [
@@ -141,10 +135,19 @@ exports.brands = [
     ['kent'],
     ['gamebore'],
     ['bismuth'],
+<<<<<<< HEAD
     ['sk'],
     ['lapua'],
     ['sig sauer', 'sigsauer'],
     ['umc'],
     ['magnum research', 'magnumresearch']
+=======
+    [
+        'remington'
+    ],
+    [
+        'winchester'
+    ],
+>>>>>>> moved brands that are also calibres to bottom of list
 ];
 //# sourceMappingURL=brands.js.map
