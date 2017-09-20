@@ -38,16 +38,37 @@ describe('get-count', () => {
     expect(getItemCount('Chinese Surplus - 7.62x39, 123gr, FMJ, Crate of 1,500')).toEqual(1500);
   });
 
-  test('"Challenger Target Loads Shotgun Ammo - Target, 20Ga, 2-3/4", 7/8oz, #7-1/2, 25rds Box, 120..." = 25', () => {
+  test('"Challenger Target Loads Shotgun Ammo - Target, 20Ga, 2-3/4", 7/8oz, #7-1/2, 25rds Box, 120..." => 25', () => {
     expect(getItemCount('Challenger Target Loads Shotgun Ammo - Target, 20Ga, 2-3/4", 7/8oz, #7-1/2, 25rds Box, 120...')).toEqual(25);
   });
 
   // dont have way to deal with this
-  test.skip('handle CCI Blazer Handgun Brass Pistol Ammunition 9mm 115 Gr 50 Rounds FMJ #5200 ', () => {
+  test('handle CCI Blazer Handgun Brass Pistol Ammunition 9mm 115 Gr 50 Rounds FMJ #5200 ', () => {
     expect(getItemCount('CCI Blazer Handgun Brass Pistol Ammunition 9mm 115 Gr 50 Rounds FMJ #5200 ')).toEqual(50);
   });
 
   test('"PMC 223 Rem 55 FMJ-BT 1000/Cas" => 1000 rounds ', () => {
     expect(getItemCount('PMC 223 Rem 55 FMJ-BT 1000/Cas')).toEqual(1000);
   });
+
+  test('".223 Remington Ammunition, 55gr HP by MFS. Zinc plated steel case. Non-Corrosive. 20 per box. Order a 500rd case (25 boxes) and get FREE Shipping (few exceptions may apply)" => 25', () => {
+    expect(getItemCount('.223 Remington Ammunition, 55gr HP by MFS. Zinc plated steel case. Non-Corrosive. 20 per box. Order a 500rd case (25 boxes) and get FREE Shipping (few exceptions may apply)')).toEqual(25);
+  });
+
+  test('"Sako 308 WIN Super Hammerhead, JSP Bonded Core 180 Grain Box 20 #P629236A" -> 20', () => {
+    expect(getItemCount('Sako 308 WIN Super Hammerhead, JSP Bonded Core 180 Grain Box 20 #P629236A')).toEqual(20);
+  });
+
+  test('"HIRTENBERGER 308 WIN (7.62×51) 146gr FMJ (Lead Core) 240/Pack " => 240', () => {
+    expect(getItemCount('HIRTENBERGER 308 WIN (7.62×51) 146gr FMJ (Lead Core) 240/Pack ')).toEqual(240);
+  });
+
+  test('" Remington 223 UMC 55GR FMJ Freedom Bucket 300 RD " => 300', () => {
+    expect(getItemCount(' Remington 223 UMC 55GR FMJ Freedom Bucket 300 RD ')).toEqual(300);
+  });
+
+  test('"Remington UMC Freedom Bucket - .223 Rem, 55gr, FMJ, Bucket of 300" => 300', () => {
+    expect(getItemCount('Remington UMC Freedom Bucket - .223 Rem, 55gr, FMJ, Bucket of 300')).toEqual(300);
+  });
+
 });
