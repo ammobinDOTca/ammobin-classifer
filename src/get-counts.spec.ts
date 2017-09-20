@@ -46,4 +46,8 @@ describe('get-count', () => {
   test.skip('handle CCI Blazer Handgun Brass Pistol Ammunition 9mm 115 Gr 50 Rounds FMJ #5200 ', () => {
     expect(getItemCount('CCI Blazer Handgun Brass Pistol Ammunition 9mm 115 Gr 50 Rounds FMJ #5200 ')).toEqual(50);
   });
+
+  test('"PMC 223 Rem 55 FMJ-BT 1000/Cas" => 1000 rounds ', () => {
+    expect(getItemCount('PMC 223 Rem 55 FMJ-BT 1000/Cas')).toEqual(1000);
+  });
 });
