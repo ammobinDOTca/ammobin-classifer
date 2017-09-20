@@ -11,37 +11,37 @@ function getItemCount(str) {
     const result = natural_1.NGrams.ngrams(str.replace(reg, '').replace('rd', ' rd').toLowerCase(), 3, '', '')
         .map(words => {
         let count = null;
-        const numberScore = words.reduce((score, word, index) => {
+        const numberScore = words.reduce((numScore, word, index) => {
             const parsed = parseInt(word, 10);
             if (!isNaN(parsed) && parsed.toString() === word) {
-                if (score === 0) {
+                if (numScore === 0) {
                     count = parsed;
-                    score = 1;
+                    numScore = 1;
                     if (index < 2 && words[index + 1] === 'rds') {
-                        score += 0.5;
+                        numScore += 0.5;
                     }
                 }
                 else {
                     // if multiple numbers, probably not a good match
-                    score = 0.25;
+                    numScore = 0.25;
                 }
             }
-            return score;
+            return numScore;
         }, 0);
         // give another point for each
         // give 0.5 points for 'of'
-        const keyScore = words.reduce((score, word, index) => {
-            const keywords = ['box', 'case', 'rounds', 'rds', 'crate', 'count', 'jar', 'brick', 'can', 'rnds'];
+        const keyScore = words.reduce((kScore, word, index) => {
+            const keywords = ['box', 'case', 'rounds', 'rds', 'crate', 'count', 'jar', 'brick', 'can', 'rnds', 'cas'];
             if (keywords.indexOf(word) >= 0) {
-                score++;
+                kScore++;
             }
             else if (word === 'of' &&
                 index === 1 &&
                 keywords.indexOf(words[index - 1]) >= 0) {
                 // only give points if "<noun> of "
-                score += 0.5;
+                kScore += 0.5;
             }
-            return score;
+            return kScore;
         }, 0);
         let score = numberScore + keyScore;
         if (score <= 1) {
