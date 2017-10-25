@@ -1,6 +1,7 @@
 import { classify } from './classifier';
 import { shotgunGauges } from './shotgun-gauges';
 import { centerFireCalibres } from './centerfire-calibres';
+import { rimfireCalibres } from './rimfire-calibres';
 import { brands } from './brands';
 describe('classifer()', () => {
   it('should pull 12-Gauge', () => {
@@ -20,11 +21,22 @@ describe('classifer()', () => {
       ['Hirtenberger 7.62x51 Nato Boxer, Primed', '.308 / 7.62 nato'],
       ['Prvi Partizan Ammunition 6.5x52mm Mannlicher-Carcano 123 Grain Soft Point', '6.5x52mm carcano'],
       ['PRVI Ammunition 6.5x52 Carcano 139gr FMJ-BT - Box of 20 ', '6.5x52mm carcano'],
+      ['Sellier & Bellot 300 AAC Blackout Ammunition, 124gr FMJ. ', '.300 aac blackout'],
+      [' Sellier & Bellot 300 Blackout, 200gr FMJ Subsonic, Box of 20 ', '.300 aac blackout'],
     ].forEach(t => it(`"${t[0]} => ${t[1]}`, () =>
       expect(classify(centerFireCalibres, t[0]))
         .toEqual(t[1])));
   });
 
+  describe('rimfire', () => {
+    [
+      [' Winchester 22 wmr 30 gr vmax ', '.22 wmr'],
+      ['CCI 22LR Standard Velocity Lead RN 40gr 5000/case ', '.22 lr'],
+      [' CCI 22LR MINI-MAG, HIGH-VELOCITY, 40Gr RN 5000/Case ', '.22 lr']
+    ].forEach(t => it(`"${t[0]} => ${t[1]}`, () =>
+      expect(classify(rimfireCalibres, t[0]))
+        .toEqual(t[1])));
+  });
   describe('brands', () => {
     [
       [' Glock G22 Gen4 + 500 Round of PMC 40 S&W 180gr COMBO ', 'pmc'],
