@@ -63,7 +63,7 @@ exports.centerFireCalibres = [
         '50browningmachinegun',
         '12.7x99mmnato',
         '50browning'],
-    ['.300 aac blackout', '300blk', '7.62x35mm', '.300aac', '.300blackout'],
+    ['.300 aac blackout', '300blk', '7.62x35mm', '300aac', '300blackout'],
     ['7.92x57mmmauser', '8mmmauser', '8x57', '8mm'],
     ['5.6x52mmr', '5.6x52r', '22savagehigh-power'],
     ['.243 winchester', '6x52mm', '243win'],
@@ -85,6 +85,7 @@ exports.centerFireCalibres = [
     ['.50 AE', '50ae', '50action'],
     ['.222 remington', '222'],
     ['.375 ruger', '375ruger'],
-    ['.270 winchester short magnum', '270winchestershortmagnum', '270wsm']
+    ['.270 winchester short magnum', '270winchestershortmagnum', '270wsm'],
+    ['5.45x39'],
 ];
 //# sourceMappingURL=centerfire-calibres.js.map
