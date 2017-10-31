@@ -139,6 +139,7 @@ exports.brands = [
     ['lapua'],
     ['sig sauer', 'sigsauer'],
     ['umc'],
+    ['remanufactured'],
     ['magnum research', 'magnumresearch'],
     [
         'remington'
