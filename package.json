@@ -17,7 +17,7 @@
     "natural": "^0.5.1"
   },
   "devDependencies": {
-    "@types/jest": "^21.1.0",
+    "@types/jest": "^22.0.0",
     "@types/natural": "^0.2.32",
     "jest": "^22.0.0",
     "ts-jest": "^21.0.0",
