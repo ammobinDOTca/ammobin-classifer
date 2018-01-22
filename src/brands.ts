@@ -21,10 +21,10 @@ export const brands = [
   ],
   [
     'clever mirage',
-    'clever '
+    'clever'
   ],
   [
-    'kent '
+    'kent'
   ],
   [
     'rottweil'

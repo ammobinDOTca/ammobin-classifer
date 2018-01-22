@@ -60,5 +60,5 @@ export function classifyAmmo(str: string): { calibre: string, type: 'rimfire' | 
  * @returns {string} standardized ammo brand
  */
 export function classifyBrand(str: string): string {
-  return classify(brands, str);
+  return classify(brands, str, true);
 }

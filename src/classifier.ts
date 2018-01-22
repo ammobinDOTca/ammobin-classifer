@@ -4,7 +4,7 @@
  * @param {string} str
  * @returns {string} first element in matched list entry OR unknown if no results found
  */
-export function classify(list: string[][], str: string): string {
+export function classify(list: string[][], str: string, workingWithBrands = false): string {
   const commas = new RegExp(',', 'g');
   const argTendra = new RegExp('×', 'g');
   const whitespace = new RegExp(/\s/, 'g');
@@ -18,10 +18,21 @@ export function classify(list: string[][], str: string): string {
     return !!cg.find(cal => s.indexOf(cal) >= 0);
   }) || [])
     .reduce((bestMatch, match) => {
-      if (match[0].length > bestMatch.length) {
-        return match[0];
+      if (workingWithBrands) {
+        // always take first match of brands
+        // brand list to have brands that are also ammo types at the end
+        // ie: if any other brand has 223 remington, pick that brand over remington
+        if (bestMatch === '') {
+          return match[0];
+        } else {
+          return bestMatch;
+        }
       } else {
-        return bestMatch;
+        if (match[0].length > bestMatch.length) {
+          return match[0];
+        } else {
+          return bestMatch;
+        }
       }
     }, '');
 
