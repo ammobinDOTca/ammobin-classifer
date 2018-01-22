@@ -3,6 +3,7 @@ import { shotgunGauges } from './shotgun-gauges';
 import { centerFireCalibres } from './centerfire-calibres';
 import { rimfireCalibres } from './rimfire-calibres';
 import { brands } from './brands';
+
 describe('classifer()', () => {
   it('should pull 12-Gauge', () => {
     expect(classify(shotgunGauges, 'Federal 12-Gauge 2-3/4-in Rifled Slug ')).toEqual('12 ga');
@@ -45,9 +46,13 @@ describe('classifer()', () => {
       ['Bulgarian Surplus, 7.62x39, 1320 Round Crate', 'surplus'],
       [' Priv Partisan - 7.62x39, 123gr, SP, Box of 20 ', 'ppu'],
       ['Schmidt-Rubin Surplus, 7.5x55 Swiss, 480 Round ', 'surplus'],
-
+      ['Barnaul .223 Remington FMJ 500rds CASE', 'barnaul'],
+      ['Barnaul .223 Remington FMJ 500rds CASE', 'barnaul'],
+      [' Federal 223 Remington 55gr FMJ - 1000 Rounds ', 'federal'],
+      [' REMINGTON 223 REMINGTON 55 PSP ', 'remington'],
+      ['fiocchi ammunition 223 remington fmj boat tail 55 grain box 50 fio 223a ', 'fiocchi'],
     ].forEach(t => it(`"${t[0]} => ${t[1]}`, () =>
-      expect(classify(brands, t[0]))
+      expect(classify(brands, t[0], true))
         .toEqual(t[1])));
   });
 });
