@@ -63,7 +63,7 @@ exports.classifyAmmo = classifyAmmo;
  * @returns {string} standardized ammo brand
  */
 function classifyBrand(str) {
-    return classifier_1.classify(brands_1.brands, str);
+    return classifier_1.classify(brands_1.brands, str, true);
 }
 exports.classifyBrand = classifyBrand;
 //# sourceMappingURL=index.js.map

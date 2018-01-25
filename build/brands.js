@@ -23,10 +23,10 @@ exports.brands = [
     ],
     [
         'clever mirage',
-        'clever '
+        'clever'
     ],
     [
-        'kent '
+        'kent'
     ],
     [
         'rottweil'

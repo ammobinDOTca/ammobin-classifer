@@ -4,4 +4,4 @@
  * @param {string} str
  * @returns {string} first element in matched list entry OR unknown if no results found
  */
-export declare function classify(list: string[][], str: string): string;
+export declare function classify(list: string[][], str: string, workingWithBrands?: boolean): string;
