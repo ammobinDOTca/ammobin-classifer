@@ -47,7 +47,8 @@ export const centerFireCalibres = [
     '3030win'],
   ['.303 british', '303british', '7.7x56mmr'],
   ['.270 win', '270win'],
-  ['.300 winchester short magnum', '300wsm', '300win', '300wn'],
+  ['.300 winchester short magnum', '300wsm'],
+  ['.300 winchester magnum', '300win', '300wn'],
   ['6.5x55mm', '6.5x55'],
   [
     '.240 Weatherby Magnum',
