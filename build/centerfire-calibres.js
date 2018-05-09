@@ -40,7 +40,7 @@ exports.centerFireCalibres = [
     ['.500 s&w magnum', '500s&wmag', '12.7x41mmsr'],
     ['.44 magnum', '44remingtonmagnum', '44mag', '44remmag'],
     ['.25-06 remington', '25-06'],
-    ['30 carbine', '7.62×33mm'],
+    ['.30 carbine', '30carbine', '7.62×33mm'],
     ['.30-06 springfield', '30-06sprg', '30-06'],
     ['.30-30 winchester',
         '7.8x51r',
