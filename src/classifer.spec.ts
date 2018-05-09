@@ -24,6 +24,7 @@ describe('classifer()', () => {
       ['PRVI Ammunition 6.5x52 Carcano 139gr FMJ-BT - Box of 20 ', '6.5x52mm carcano'],
       ['Sellier & Bellot 300 AAC Blackout Ammunition, 124gr FMJ. ', '.300 aac blackout'],
       [' Sellier & Bellot 300 Blackout, 200gr FMJ Subsonic, Box of 20 ', '.300 aac blackout'],
+      ['FEDERAL POWER SHOK 30 CARBINE 110 GR 30CA', '.30 carbine']
     ].forEach(t => it(`"${t[0]} => ${t[1]}`, () =>
       expect(classify(centerFireCalibres, t[0]))
         .toEqual(t[1])));
