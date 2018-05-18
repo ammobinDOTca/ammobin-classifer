@@ -5,9 +5,15 @@ import { rimfireCalibres } from './rimfire-calibres';
 import { brands } from './brands';
 
 describe('classifer()', () => {
-  it('should pull 12-Gauge', () => {
-    expect(classify(shotgunGauges, 'Federal 12-Gauge 2-3/4-in Rifled Slug ')).toEqual('12 ga');
+  describe('centerfire', () => {
+    [
+      ['Federal PowerShok 5RND Box 3" 1.25oz Slug 12GA', '12 ga'],
+      ['Federal 12-Gauge 2-3/4-in Rifled Slug ', '12 ga'],
+    ].forEach(t => it(`"${t[0]} => ${t[1]}`, () =>
+      expect(classify(shotgunGauges, t[0]))
+        .toEqual(t[1])));
   });
+
   describe('centerfire', () => {
     [
       ['Prvi Partizan Ammunition 222 Remington 50 Grain Soft Point', '.222 remington'],
@@ -34,7 +40,8 @@ describe('classifer()', () => {
     [
       [' Winchester 22 wmr 30 gr vmax ', '.22 wmr'],
       ['CCI 22LR Standard Velocity Lead RN 40gr 5000/case ', '.22 lr'],
-      [' CCI 22LR MINI-MAG, HIGH-VELOCITY, 40Gr RN 5000/Case ', '.22 lr']
+      [' CCI 22LR MINI-MAG, HIGH-VELOCITY, 40Gr RN 5000/Case ', '.22 lr'],
+      ['Aguila 22LR Interceptor Solid Point 40gr 1470FPS Ammunition ', '.22 lr'],
     ].forEach(t => it(`"${t[0]} => ${t[1]}`, () =>
       expect(classify(rimfireCalibres, t[0]))
         .toEqual(t[1])));
