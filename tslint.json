@@ -1,32 +1,16 @@
 {
   "rules": {
     "class-name": true,
-    "comment-format": [
-      true,
-      "check-space"
-    ],
+    "comment-format": [true, "check-space"],
     "curly": true,
     "eofline": true,
     "forin": true,
-    "indent": [
-      true,
-      "spaces"
-    ],
+    "indent": [true, "spaces"],
     "label-position": true,
-    "max-line-length": [
-      true,
-      120
-    ],
+    "max-line-length": [true, 120],
     "no-arg": true,
     "no-bitwise": false,
-    "no-console": [
-      true,
-      "debug",
-      "info",
-      "time",
-      "timeEnd",
-      "trace"
-    ],
+    "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
     "no-construct": true,
     "no-debugger": true,
     "no-duplicate-variable": true,
@@ -39,39 +23,16 @@
     "no-unused-expression": true,
     "no-use-before-declare": false,
     "no-var-keyword": true,
-    "one-line": [
-      true,
-      "check-open-brace",
-      "check-whitespace"
-    ],
-    "quotemark": [
-      true,
-      "single"
-    ],
+    "one-line": [true, "check-open-brace", "check-whitespace"],
+    "quotemark": [true, "single"],
     "radix": true,
-    "semicolon": true,
-    "triple-equals": [
-      true,
-      "allow-null-check"
-    ],
+    "semicolon": false,
+    "triple-equals": [true, "allow-null-check"],
     "variable-name": "allow-leading-underscore",
-    "whitespace": [
-      true,
-      "check-branch",
-      "check-decl",
-      "check-operator",
-      "check-separator",
-      "check-type"
-    ],
-    "no-consecutive-blank-lines": [
-      true
-    ],
+    "whitespace": [true, "check-branch", "check-decl", "check-operator", "check-separator", "check-type"],
+    "no-consecutive-blank-lines": [true],
     "no-var-requires": true,
-    "no-invalid-this": [
-      true
-    ],
-    "no-unused-variable": [
-      true
-    ]
+    "no-invalid-this": [true],
+    "no-unused-variable": [true]
   }
 }
