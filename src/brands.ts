@@ -63,7 +63,7 @@ export const brands = [
   ['remanufactured'],
   ['magnum research', 'magnumresearch'],
   ['blackhills', 'bha'],
-
+  ['magtech'],
   // since these are also calibre names, put them last
   ['remington'],
   ['winchester'],
