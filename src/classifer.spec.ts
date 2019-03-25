@@ -40,6 +40,7 @@ describe('classifer()', () => {
       /* ['44 S&W RUSSIAN','.44 russian'],*/
       ['44-40 WCF', '.44-40 winchester'],
       ['.44 Winchester', '.44-40 winchester'],
+      ['7.62 mm TOKAREV 95gr PRVI', '7.62x25 tokarev'],
     ].forEach(t => it(`"${t[0]} => ${t[1]}`, () => expect(classify(centerFireCalibres, t[0])).toEqual(t[1]))))
 
   describe('rimfire', () =>
