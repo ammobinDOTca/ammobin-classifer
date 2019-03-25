@@ -68,4 +68,8 @@ export const centerFireCalibres = [
   ['7.65x21mm', '30luger', '7.65mmluger'],
   ['.416 Rigby', '416Rigby', '10.57x74'],
   ['6.5 PRC', '6.5prc'],
+  ['.38-55 winchester', '38-55wcf'],
+  ['.44 russian', '44s&wrussian', '44russian'],
+  ['.44 s&w special', '44special', '44s&w'],
+  ['.44-40 winchester', '44winchester', '44wcf', '44-40'],
 ]

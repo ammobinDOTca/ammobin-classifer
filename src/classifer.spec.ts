@@ -5,7 +5,7 @@ import { rimfireCalibres } from './rimfire-calibres'
 import { brands } from './brands'
 
 describe('classifer()', () => {
-  describe('centerfire', () =>
+  describe('shotgun', () =>
     [
       ['Federal PowerShok 5RND Box 3" 1.25oz Slug 12GA', '12 ga'],
       ['Federal 12-Gauge 2-3/4-in Rifled Slug ', '12 ga'],
@@ -35,6 +35,11 @@ describe('classifer()', () => {
       ['7.62 Nagant FMJ 98gr FIOCCHI', '7.62x38mmr'],
       ['5.6 x 52R – 22 SAVAGE HIGH POWER FMJ 70gr Sellier & Bellot', '5.6x52mmr'],
       ['30 LUGER FMJ 93gr FIOCCHI', '7.65x21mm'],
+      ['38-55 WCF', '.38-55 winchester'],
+      ['44 SPECIAL', '.44 s&w special'],
+      /* ['44 S&W RUSSIAN','.44 russian'],*/
+      ['44-40 WCF', '.44-40 winchester'],
+      ['.44 Winchester', '.44-40 winchester'],
     ].forEach(t => it(`"${t[0]} => ${t[1]}`, () => expect(classify(centerFireCalibres, t[0])).toEqual(t[1]))))
 
   describe('rimfire', () =>
@@ -43,6 +48,7 @@ describe('classifer()', () => {
       ['CCI 22LR Standard Velocity Lead RN 40gr 5000/case ', '.22 lr'],
       [' CCI 22LR MINI-MAG, HIGH-VELOCITY, 40Gr RN 5000/Case ', '.22 lr'],
       ['Aguila 22LR Interceptor Solid Point 40gr 1470FPS Ammunition ', '.22 lr'],
+      ['CCI 22 WRF Ammunition', '.22 wmr'],
     ].forEach(t => it(`"${t[0]} => ${t[1]}`, () => expect(classify(rimfireCalibres, t[0])).toEqual(t[1]))))
   describe('brands', () =>
     [
