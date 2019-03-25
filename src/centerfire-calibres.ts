@@ -66,4 +66,6 @@ export const centerFireCalibres = [
   ['8x50mmr lebel', '8x50', '8mm'],
   ['.455 webley', '455webley', '455eley', '455colt'],
   ['7.65x21mm', '30luger', '7.65mmluger'],
+  ['.416 Rigby', '416Rigby', '10.57x74'],
+  ['6.5 PRC', '6.5prc'],
 ]

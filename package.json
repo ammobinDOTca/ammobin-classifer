@@ -1,12 +1,12 @@
 {
   "name": "ammobin-classifier",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "description": "",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "scripts": {
     "test:lint": "tslint --project ./tsconfig.json './src/**/*.ts' ",
-    "test:unit": "jest",
+    "test:unit": "jest --env=node",
     "test": "npm run test:lint && npm run test:unit",
     "build": "tsc",
     "prepublish": "npm run build",
