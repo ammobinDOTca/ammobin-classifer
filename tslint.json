@@ -29,7 +29,6 @@
     "semicolon": false,
     "triple-equals": [true, "allow-null-check"],
     "variable-name": "allow-leading-underscore",
-    "whitespace": [true, "check-branch", "check-decl", "check-operator", "check-separator", "check-type"],
     "no-consecutive-blank-lines": [true],
     "no-var-requires": true,
     "no-invalid-this": [true],
