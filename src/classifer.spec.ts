@@ -41,6 +41,25 @@ describe('classifer()', () => {
       ['44-40 WCF', '.44-40 winchester'],
       ['.44 Winchester', '.44-40 winchester'],
       ['7.62 mm TOKAREV 95gr PRVI', '7.62x25 tokarev'],
+      ['25 AUTO 50gr PRVI', '.25 auto'],
+
+      ['44 COLT Black Powder', '.44 colt'],
+
+      ['41 SHORT COLT Black Powder', '.41 short colt'],
+
+      ['41 LONG COLT Smokeless', '.41 long colt'],
+
+      ['38-40 WCF Black Powder', '.38-40 winchester'],
+
+      ['38 S&W Smokeless', '.38 s&w'],
+
+      ['38 SHORT COLT Black Powder', '.38 short colt'],
+      ['38 LONG COLT Smokeless', '.38 long colt'],
+
+      ['32-20 WCF Smokeless', '.32-20 winchester'],
+
+      ['32 S&W LONG Smokeless', '.32 s&w long'],
+      ['32 S&W SHORT Black Powder', '.32 s&w short'],
     ].forEach(t => it(`"${t[0]} => ${t[1]}`, () => expect(classify(centerFireCalibres, t[0])).toEqual(t[1]))))
 
   describe('rimfire', () =>
