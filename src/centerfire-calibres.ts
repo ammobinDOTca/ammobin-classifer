@@ -21,6 +21,7 @@ export const centerFireCalibres = [
   ['338 lapua magnum', '8.6x70mm', '8.58x70mm', '338lapua'],
   ['.338 winchester magnum', '338winchestermagnum', '338win'],
   ['6.5mm creedmoor', '6.5creedmoor', '6.5cm'],
+  ['6mm creedmoor', '6creedmoor'],
   ['.460 s&w magnum', '.460s&w'],
   ['.500 s&w magnum', '500s&wmag', '12.7x41mmsr'],
   ['.44 magnum', '44remingtonmagnum', '44mag', '44remmag'],
