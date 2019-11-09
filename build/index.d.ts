@@ -1,4 +1,9 @@
+import { shotgunGauges } from './shotgun-gauges';
+import { rimfireCalibres } from './rimfire-calibres';
+import { centerFireCalibres } from './centerfire-calibres';
+import { brands } from './brands';
 export { getItemCount } from './get-counts';
+export { shotgunGauges, rimfireCalibres, centerFireCalibres, brands };
 /**
  * pull out a standard rimfire calibre
  * @param {string} str string containing a rimfire calibre
