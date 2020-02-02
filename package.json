@@ -23,7 +23,7 @@
     }
   },
   "devDependencies": {
-    "@types/jest": "^24.0.22",
+    "@types/jest": "^25.1.0",
     "@types/natural": "^0.6.1",
     "husky": "^4.0.2",
     "jest": "^24.9.0",
