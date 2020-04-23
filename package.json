@@ -15,7 +15,7 @@
   "author": "nexus-uw",
   "license": "MIT",
   "dependencies": {
-    "natural": "^0.6.3"
+    "natural": "^1.0.1"
   },
   "husky": {
     "hooks": {
