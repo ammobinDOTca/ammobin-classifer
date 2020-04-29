@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const natural_1 = require("natural");
+const simplengrams_1 = require("simplengrams");
 /**
  * parse a store listing to determine the item quantity
  * @param {string} str
@@ -9,14 +9,31 @@ const natural_1 = require("natural");
 function getItemCount(str) {
     const reg = new RegExp(',', 'g');
     const keywords = [
-        'box', 'case', 'rounds', 'rds', 'crate', 'count', 'jar', 'brick', 'can', 'rnds', 'cas', 'pack', 'rd', 'bucket'
+        'box',
+        'case',
+        'rounds',
+        'rds',
+        'crate',
+        'count',
+        'jar',
+        'brick',
+        'can',
+        'rnds',
+        'cas',
+        'pack',
+        'rd',
+        'bucket',
     ];
-    const result = str.replace(/(\d+)\,(\d+)/g, '$1$2') // replace commas within numbers (ie: 1,500 => 1500)
+    const result = str
+        .replace(/(\d+)\,(\d+)/g, '$1$2') // replace commas within numbers (ie: 1,500 => 1500)
         .split(',') // separate sections by commas
         .reduce((res, s) => {
         // foreach section, do the usual scoring stuff
-        return res.concat(natural_1.NGrams.ngrams(s.replace(reg, '').replace('rd', ' rd').toLowerCase(), 3, '', '')
-            .map(words => {
+        return res.concat(simplengrams_1.ngramsSync(s.replace(reg, '').replace('rd', ' rd').toLowerCase(), 3, {
+            logs: 0,
+            strict: false,
+            normalize: true,
+        }).map((words) => {
             let count = null;
             const numberScore = words.reduce((numScore, word, index) => {
                 const parsed = parseInt(word, 10);
@@ -44,9 +61,7 @@ function getItemCount(str) {
                 if (keywords.indexOf(word) >= 0) {
                     kScore++;
                 }
-                else if (word === 'of' &&
-                    index === 1 &&
-                    keywords.indexOf(words[index - 1]) >= 0) {
+                else if (word === 'of' && index === 1 && keywords.indexOf(words[index - 1]) >= 0) {
                     // only give points if "<noun> of "
                     kScore += 0.5;
                 }
