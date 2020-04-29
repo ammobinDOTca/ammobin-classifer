@@ -15,7 +15,7 @@
   "author": "nexus-uw",
   "license": "MIT",
   "dependencies": {
-    "natural": "^1.0.1"
+    "simplengrams": "^1.0.0"
   },
   "husky": {
     "hooks": {
@@ -23,18 +23,15 @@
     }
   },
   "devDependencies": {
-    "@types/jest": "^25.1.0",
-    "@types/natural": "^0.6.1",
-    "husky": "^4.0.2",
-    "jest": "^24.9.0",
-
-    "prettier": "^2.0.0",
+    "@types/jest": "^25.2.1",
+    "@types/natural": "^0.6.3",
+    "husky": "^4.2.5",
+    "jest": "^25.5.0",
+    "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
-
-    "ts-jest": "^25.1.0",
-    "tslint": "^5.20.1",
-    "typescript": "^3.7.2"
-
+    "ts-jest": "^25.4.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.8.3"
   },
   "jest": {
     "transform": {
