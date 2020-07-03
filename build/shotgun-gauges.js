@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.shotgunGauges = void 0;
 /**
  * known shotgun gauges
  */

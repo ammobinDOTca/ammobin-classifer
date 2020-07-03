@@ -3,14 +3,17 @@ import { shotgunGauges } from './shotgun-gauges'
 import { centerFireCalibres } from './centerfire-calibres'
 import { rimfireCalibres } from './rimfire-calibres'
 import { brands } from './brands'
+import { classifyCenterFire } from '.'
 
 describe('classifer()', () => {
+  it('should mark unknowns as UNKNOWN', () => expect(classifyCenterFire('random jib')).toEqual('UNKNOWN'))
+
   describe('shotgun', () =>
     [
       ['Federal PowerShok 5RND Box 3" 1.25oz Slug 12GA', '12 ga'],
       ['Federal 12-Gauge 2-3/4-in Rifled Slug ', '12 ga'],
       ['Winchester Super-Target 20 Gauge #8, 2-3/4", Case of 250 #TRGT208-CASE', '20 ga'],
-    ].forEach(t => it(`"${t[0]} => ${t[1]}`, () => expect(classify(shotgunGauges, t[0])).toEqual(t[1]))))
+    ].forEach((t) => it(`"${t[0]} => ${t[1]}`, () => expect(classify(shotgunGauges, t[0])).toEqual(t[1]))))
 
   describe('centerfire', () =>
     [
@@ -60,7 +63,7 @@ describe('classifer()', () => {
 
       ['32 S&W LONG Smokeless', '.32 s&w long'],
       ['32 S&W SHORT Black Powder', '.32 s&w short'],
-    ].forEach(t => it(`"${t[0]} => ${t[1]}`, () => expect(classify(centerFireCalibres, t[0])).toEqual(t[1]))))
+    ].forEach((t) => it(`"${t[0]} => ${t[1]}`, () => expect(classify(centerFireCalibres, t[0])).toEqual(t[1]))))
 
   describe('rimfire', () =>
     [
@@ -69,7 +72,7 @@ describe('classifer()', () => {
       [' CCI 22LR MINI-MAG, HIGH-VELOCITY, 40Gr RN 5000/Case ', '.22 lr'],
       ['Aguila 22LR Interceptor Solid Point 40gr 1470FPS Ammunition ', '.22 lr'],
       ['CCI 22 WRF Ammunition', '.22 wmr'],
-    ].forEach(t => it(`"${t[0]} => ${t[1]}`, () => expect(classify(rimfireCalibres, t[0])).toEqual(t[1]))))
+    ].forEach((t) => it(`"${t[0]} => ${t[1]}`, () => expect(classify(rimfireCalibres, t[0])).toEqual(t[1]))))
   describe('brands', () =>
     [
       [' Glock G22 Gen4 + 500 Round of PMC 40 S&W 180gr COMBO ', 'pmc'],
@@ -83,5 +86,5 @@ describe('classifer()', () => {
       [' Federal 223 Remington 55gr FMJ - 1000 Rounds ', 'federal'],
       [' REMINGTON 223 REMINGTON 55 PSP ', 'remington'],
       ['fiocchi ammunition 223 remington fmj boat tail 55 grain box 50 fio 223a ', 'fiocchi'],
-    ].forEach(t => it(`"${t[0]} => ${t[1]}`, () => expect(classify(brands, t[0], true)).toEqual(t[1]))))
+    ].forEach((t) => it(`"${t[0]} => ${t[1]}`, () => expect(classify(brands, t[0], true)).toEqual(t[1]))))
 })

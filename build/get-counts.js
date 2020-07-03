@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getItemCount = void 0;
 const simplengrams_1 = require("simplengrams");
 /**
  * parse a store listing to determine the item quantity

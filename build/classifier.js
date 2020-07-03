@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.classify = void 0;
 /**
  * try to match str to the list
  * @param {string[][]} list mapping of string to first element in the list

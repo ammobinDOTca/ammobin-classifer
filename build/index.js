@@ -1,16 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.classifyBrand = exports.classifyAmmo = exports.classifyShotgun = exports.classifyCenterFire = exports.classifyRimfire = exports.brands = exports.centerFireCalibres = exports.rimfireCalibres = exports.shotgunGauges = void 0;
 const shotgun_gauges_1 = require("./shotgun-gauges");
-exports.shotgunGauges = shotgun_gauges_1.shotgunGauges;
+Object.defineProperty(exports, "shotgunGauges", { enumerable: true, get: function () { return shotgun_gauges_1.shotgunGauges; } });
 const rimfire_calibres_1 = require("./rimfire-calibres");
-exports.rimfireCalibres = rimfire_calibres_1.rimfireCalibres;
+Object.defineProperty(exports, "rimfireCalibres", { enumerable: true, get: function () { return rimfire_calibres_1.rimfireCalibres; } });
 const centerfire_calibres_1 = require("./centerfire-calibres");
-exports.centerFireCalibres = centerfire_calibres_1.centerFireCalibres;
+Object.defineProperty(exports, "centerFireCalibres", { enumerable: true, get: function () { return centerfire_calibres_1.centerFireCalibres; } });
 const brands_1 = require("./brands");
-exports.brands = brands_1.brands;
+Object.defineProperty(exports, "brands", { enumerable: true, get: function () { return brands_1.brands; } });
 const classifier_1 = require("./classifier");
 var get_counts_1 = require("./get-counts");
-exports.getItemCount = get_counts_1.getItemCount;
+Object.defineProperty(exports, "getItemCount", { enumerable: true, get: function () { return get_counts_1.getItemCount; } });
 /**
  * pull out a standard rimfire calibre
  * @param {string} str string containing a rimfire calibre

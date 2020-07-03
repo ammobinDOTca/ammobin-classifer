@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.centerFireCalibres = void 0;
 /**
  * known centerfire calibres
  */
@@ -86,5 +87,8 @@ exports.centerFireCalibres = [
     ['.44 colt', '44colt'],
     ['.32-20 winchester', '32-20'],
     ['.38-40 winchester', '38-40'],
+    ['.224 Valkyrie', '224valkyrie'],
+    ['.17 Hornet', '17hornet'],
+    ['.350 Legend', '350legend'],
 ];
 //# sourceMappingURL=centerfire-calibres.js.map
