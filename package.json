@@ -15,7 +15,7 @@
   "author": "nexus-uw",
   "license": "MIT",
   "dependencies": {
-    "simplengrams": "^1.0.0"
+    "simplengrams": "^3.1.0"
   },
   "husky": {
     "hooks": {
